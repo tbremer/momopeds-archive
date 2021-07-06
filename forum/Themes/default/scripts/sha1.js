@@ -4,7 +4,7 @@
  * Version 2.1 Copyright Paul Johnston 2000 - 2002.
  * Other contributors: Greg Holt, Andrew Kepert, Ydnar, Lostinet
  * Distributed under the BSD License
- * See http://pajhome.org.uk/crypt/md5 for details.
+ * See //pajhome.org.uk/crypt/md5 for details.
  */
 
 /*
