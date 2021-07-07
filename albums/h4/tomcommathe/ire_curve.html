@@ -103,21 +103,21 @@
 <body>
 	<div class='page'>
 		<div class='section left-rail' id='left-rail'>
-			<script type='text/javascript' src='https://ads4.krushmedia.com/?c=b&amp;m=s&amp;placementId=56' async></script>
+			<script type='text/javascript' src='//ads4.krushmedia.com/?c=b&amp;m=s&amp;placementId=56' async></script>
 		</div>
 		<div>
 			<div class='section banner-top' id='banner-top'>
-				<script type='text/javascript' src='https://ads4.krushmedia.com/?c=b&amp;m=s&amp;placementId=86' async></script>
+				<script type='text/javascript' src='//ads4.krushmedia.com/?c=b&amp;m=s&amp;placementId=86' async></script>
 			</div>
 			<div class='section content' id='content'>
 				<img id='image'>
 			</div>
 			<div class='section banner-bottom' id='banner-bottom'>
-				<script type='text/javascript' src='https://ads4.krushmedia.com/?c=b&amp;m=s&amp;placementId=87' async></script>
+				<script type='text/javascript' src='//ads4.krushmedia.com/?c=b&amp;m=s&amp;placementId=87' async></script>
 			</div>
 		</div>
 		<div class='section right-rail' id='right-rail'>
-			<script type='text/javascript' src='https://ads4.krushmedia.com/?c=b&amp;m=s&amp;placementId=61' async></script>
+			<script type='text/javascript' src='//ads4.krushmedia.com/?c=b&amp;m=s&amp;placementId=61' async></script>
 		</div>
 	</div>
 	<script>
@@ -164,16 +164,16 @@
 		        document.getElementById('content').style.width = 'calc(100vw - ' + leftRail.offsetWidth + 'px - ' + rightRail.offsetWidth + 'px - 20px)';
 		    }
 
-		    // loadScript('banner-top', 'https://ads4.krushmedia.com/?c=b&m=s&placementId=86');
-		    // loadScript('banner-bottom', 'https://ads4.krushmedia.com/?c=b&m=s&placementId=87');
-		    // loadScript('left-rail', 'https://ads4.krushmedia.com/?c=b&m=s&placementId=56');
-		    // loadScript('right-rail', 'https://ads4.krushmedia.com/?c=b&m=s&placementId=61');
+		    // loadScript('banner-top', '//ads4.krushmedia.com/?c=b&m=s&placementId=86');
+		    // loadScript('banner-bottom', '//ads4.krushmedia.com/?c=b&m=s&placementId=87');
+		    // loadScript('left-rail', '//ads4.krushmedia.com/?c=b&m=s&placementId=56');
+		    // loadScript('right-rail', '//ads4.krushmedia.com/?c=b&m=s&placementId=61');
 		}
 
 		const init = async () => {
 		    let token = getCookie('app_auth');
 		    if (token) {
-		        const response = await fetch('https://app.photobucket.com/api/graphql', {
+		        const response = await fetch('//app.photobucket.com/api/graphql', {
 		            method: 'POST',
 		            headers: {
 		                'Content-Type': 'application/json',
@@ -196,7 +196,7 @@
 		(function() {
 		    let path = window.location.pathname;
 		    let file = path.substr(path.lastIndexOf('//i60.photobucket.com/') + 1);
-		    let img = 'https://hosting.photobucket.com' + path;
+		    let img = '//hosting.photobucket.com' + path;
 
 		    document.title = 'Photobucket | ' + file;
 		    document.getElementById('image').src = img;
