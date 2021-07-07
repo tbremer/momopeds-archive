@@ -42,26 +42,26 @@
 				<script type="text/javascript" src="Themes/default/scripts/sha1.js"></script>
 				<form id="guest_form" action="https://momopeds.com/forum/index.php?action=login2" method="post" accept-charset="ISO-8859-1"  onsubmit="hashLoginPassword(this, '28b179643c7397bfd3853ea18d71b1cd');">
 					<div class="info">Welcome, <strong>Guest</strong>. Please <a href="index456e.html?action=login">login</a> or <a href="index0ddc.html?action=register">register</a>.<br />Did you miss your <a href="indexc0d0.html?action=activate">activation email</a>?</div>
-					<input readonly type="text" name="user" size="10" class="input_text" />
-					<input readonly type="password" name="passwrd" size="10" class="input_password" />
-					<select name="cookielength">
+					<input disabled type="text" name="user" size="10" class="input_text" />
+					<input disabled type="password" name="passwrd" size="10" class="input_password" />
+					<select disabled name="cookielength">
 						<option value="60">1 Hour</option>
 						<option value="1440">1 Day</option>
 						<option value="10080">1 Week</option>
 						<option value="43200">1 Month</option>
 						<option value="-1" selected="selected">Forever</option>
 					</select>
-					<input readonly type="submit" value="Login" class="button_submit" /><br />
+					<input disabled type="submit" value="Login" class="button_submit" /><br />
 					<div class="info">Login with username, password and session length</div>
-					<input readonly type="hidden" name="hash_passwrd" value="" /><input readonly type="hidden" name="b970f55f4cb" value="28b179643c7397bfd3853ea18d71b1cd" />
+					<input disabled type="hidden" name="hash_passwrd" value="" /><input disabled type="hidden" name="b970f55f4cb" value="28b179643c7397bfd3853ea18d71b1cd" />
 				</form>
 			</div>
 			<div class="news normaltext">
 				<form id="search_form" action="https://momopeds.com/forum/index.php?action=search2" method="post" accept-charset="ISO-8859-1">
-					<input readonly type="text" name="search" value="" class="input_text" />&nbsp;
-					<input readonly type="submit" name="submit" value="Search" class="button_submit" />
-					<input readonly type="hidden" name="advanced" value="0" />
-					<input readonly type="hidden" name="brd[26]" value="26" /></form>
+					<input disabled type="text" name="search" value="" class="input_text" />&nbsp;
+					<input disabled type="submit" name="submit" value="Search" class="button_submit" />
+					<input disabled type="hidden" name="advanced" value="0" />
+					<input disabled type="hidden" name="brd[26]" value="26" /></form>
 				<h2>News: </h2>
 				<p>CATS RULE, DOGS ON THE OTHER HAND DROOL.</p>
 			</div>
@@ -761,7 +761,7 @@
 	function modify_topic_show_edit(subject)
 	{
 		// Just template the subject.
-		setInnerHTML(cur_subject_div, '<input readonly type="text" name="subject" value="' + subject + '" size="60" style="width: 95%;" maxlength="80" onkeypress="modify_topic_keypress(event)" class="input_text" /><input readonly type="hidden" name="topic" value="' + cur_topic_id + '" /><input readonly type="hidden" name="msg" value="' + cur_msg_id.substr(4) + '" />');
+		setInnerHTML(cur_subject_div, '<input disabled type="text" name="subject" value="' + subject + '" size="60" style="width: 95%;" maxlength="80" onkeypress="modify_topic_keypress(event)" class="input_text" /><input disabled type="hidden" name="topic" value="' + cur_topic_id + '" /><input disabled type="hidden" name="msg" value="' + cur_msg_id.substr(4) + '" />');
 	}
 
 	// And the reverse for hiding it.
